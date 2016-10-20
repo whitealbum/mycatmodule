@@ -1,5 +1,5 @@
-# services:
-#   mycatmodule.route_subscriber:
-#     class: Drupal\mycatmodule\Routing\RouteSubscriber
-#     tags:
-#       - { name: event_subscriber }
+services:
+  mycatmodule.route_subscriber:
+    class: Drupal\mycatmodule\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
