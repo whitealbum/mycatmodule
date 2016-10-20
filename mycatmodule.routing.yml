@@ -1,0 +1,11 @@
+mycatmodule.cats:
+  path: '/cat/{name}'
+  defaults:
+    _controller: '\Drupal\mycatmodule\Controller\MyCatController::cats'
+    _title: 'Cat Names'
+  requirements:
+    _permission: 'access content'
+    name: '[a-zA-z]+'
+
+  route_callbacks:
+    - '\Drupal\mycatmodule\Routing\CustomRoutes::routes'
